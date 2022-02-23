@@ -11,6 +11,7 @@ const app = express()
 const dirpath = path.join(__dirname,'../public')
 const viewspath=path.join(__dirname,'../templates/views')
 const partialspath=path.join(__dirname,'../templates/partials')
+const port = process.env.PORT || 3000
 // hbs config:  set up handelbars and views location
 app.set('views',viewspath)
 app.set('view engine','hbs')
@@ -58,6 +59,6 @@ app.get('/weather',(req,res)=>{
    
     })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('app running in port 3000')
 })
