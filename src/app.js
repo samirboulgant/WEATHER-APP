@@ -21,16 +21,16 @@ app.use(express.static(dirpath))
 //app.use(express.static)
 
 app.get('/about',(req,res)=>{
-    res.render('about',{title:'about page',
+    res.render('about',{title:'About',
     name: 'samir'})
 })
 app.get('/help',(req,res)=>{
-    res.render('help',{title:'help page',
+    res.render('help',{title:'Help',
     name: 'samir'})
 })
 app.get('',(req,res)=>{
     res.render('index',{name: 'samir',
-title: 'weather app in inex page'})
+title: 'My Wrather App'})
 })
 app.get('/weather',(req,res)=>{
     if(!req.query.address){
