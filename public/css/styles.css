@@ -40,9 +40,24 @@ header a {
     margin-right: 16px;
     text-decoration: none;
 }
+a {
+    margin-right: 2rem;
+}
+err {
+    color: red;
+}
+#message-1{
+    margin-top: 1rem;
+}
 
 .portrait {
     width: 250px;
+    display: block;
+    margin-bottom: 1rem;
+}
+.cntr{
+    text-align: center;
+    margin: 0 auto;
 }
 
 input {
